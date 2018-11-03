@@ -1,0 +1,92 @@
+﻿@page
+@model Assignment2_Bagga_Nishat.Pages.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit Member - @Model.Members.Id</h2>
+
+<hr />
+<div>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Members.FirstName" class="control-label required"></label>
+            <input asp-for="Members.FirstName" class="form-control" />
+            <span asp-validation-for="Members.FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Members.LastName" class="control-label required"></label>
+            <input asp-for="Members.LastName" class="form-control" />
+            <span asp-validation-for="Members.FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Members.Address" class="control-label required"></label>
+            <input asp-for="Members.Address" class="form-control" />
+            <span asp-validation-for="Members.Address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Members.City" class="control-label required"></label>
+            <input asp-for="Members.City" class="form-control" />
+            <span asp-validation-for="Members.City" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Members.Province" class="control-label required"></label>
+            <input asp-for="Members.Province" class="form-control" />
+            <span asp-validation-for="Members.Province" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Members.Postal_Code" class="control-label required"></label>
+            <input asp-for="Members.Postal_Code" class="form-control" />
+            <span asp-validation-for="Members.Postal_Code" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Members.Age" class="control-label required"></label>
+            <input asp-for="Members.Age" class="form-control" />
+            <span asp-validation-for="Members.Age" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <div asp-validation-summary="All"></div>
+            <label asp-for="Members.Password" class="control-label required"></label>
+            <input asp-for="Members.Password" class="form-control" />
+            <span asp-validation-for="Members.Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <div asp-validation-summary="All"></div>
+            <label asp-for="Members.ConfirmPassword" class="control-label required"></label>
+            <input asp-for="Members.ConfirmPassword" class="form-control" />
+            <span asp-validation-for="Members.ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <div asp-validation-summary="All"></div>
+            <label asp-for="Members.Email" class="control-label required"></label>
+            <input asp-for="Members.Email" class="form-control" />
+            <span asp-validation-for="Members.Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Members.AlternativeEmail" class="control-label required"></label>
+            <input asp-for="Members.AlternativeEmail" class="form-control" />
+            <span asp-validation-for="Members.AlternativeEmail" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Members.Phone" class="control-label required"></label>
+            <input asp-for="Members.Phone" class="form-control" />
+            <span asp-validation-for="Members.Phone" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit"> Save </button>
+        </div>
+
+    </form>
+</div>

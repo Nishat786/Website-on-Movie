@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@*@section Styles 
+{
+    <link href="~/css/index.css" rel="stylesheet" type="text/css" />
+}*@
+
+<img src="~/images/CentennialCMYK.jpg.jpeg" alt="CentennialCMYK.jpg" style="width:1144px;height:60px;border-color:red" />
+<hr />
+<form method="post">
+    <h3>@Model.Message</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th> FirstName</th>
+                <th> LastName </th>
+                <th> Address </th>
+                <th> City </th>
+                <th> Province </th>
+                <th> Postal_Code</th>
+                <th> Age </th>
+                <th> Password </th>
+                <th> ConfirmPassword </th>
+                <th> Email </th>
+                <th> AlternativeEmail </th>
+                <th> Phone </th>
+            </tr>
+        </thead>
+        <tbody>
+            @*Creating a Loop Here*@
+            @foreach (var Member in Model.Members)
+            {
+                <tr>
+                    <td>@Member.Id</td>
+                    <td>@Member.FirstName</td>
+                    <td>@Member.LastName</td>
+                    <td>@Member.Address</td>
+                    <td>@Member.City</td>
+                    <td>@Member.Province</td>
+                    <td>@Member.Postal_Code</td>
+                    <td>@Member.Age</td>
+                    <td>@Member.Password</td>
+                    <td>@Member.ConfirmPassword</td>
+                    <td>@Member.Email</td>
+                    <td>@Member.AlternativeEmail</td>
+                    <td>@Member.Phone</td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@Member.Id">Edit </a>
+                        <button type="submit" asp-page-handler="Delete"
+                                asp-route-id="@Member.Id">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
