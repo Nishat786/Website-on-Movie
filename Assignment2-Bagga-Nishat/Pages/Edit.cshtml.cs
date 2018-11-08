@@ -24,7 +24,7 @@ namespace Assignment2_Bagga_Nishat.Pages
             Members = await _db.Members.FindAsync(id);
             if (Members == null)
             {
-                return RedirectToPage("/Index");
+                return RedirectToPage("./Index");
             }
             return Page();
         }

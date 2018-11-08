@@ -68,7 +68,7 @@ using Assignment2_Bagga_Nishat;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(173, 121, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3fe90d9fe21e4d578d5f6981174f537c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2cb44efbfc424e429c4f35fb6ba2b633", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -88,7 +88,7 @@ using Assignment2_Bagga_Nishat;
             WriteLiteral("\r\n<hr />\r\n");
             EndContext();
             BeginContext(304, 1792, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f98a143167fa44c299efe0cf15da456a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2ad7b08001b74823bb87869e89a79740", async() => {
                 BeginContext(324, 10, true);
                 WriteLiteral("\r\n    <h3>");
                 EndContext();
@@ -262,7 +262,7 @@ using Assignment2_Bagga_Nishat;
                 WriteLiteral("</td>\r\n                    <td>\r\n                        ");
                 EndContext();
                 BeginContext(1730, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "190da8ccf9f1492380f6730baef34c3f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0be5f82127de4bca9aefa296e63e2c46", async() => {
                     BeginContext(1777, 5, true);
                     WriteLiteral("Edit ");
                     EndContext();
@@ -297,7 +297,7 @@ using Assignment2_Bagga_Nishat;
                 WriteLiteral("\r\n                        ");
                 EndContext();
                 BeginContext(1812, 178, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3be85e34ef54d919f5b57362cf9aec9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "695f7da0a947425b936d4772e7ce2487", async() => {
                     BeginContext(1919, 62, true);
                     WriteLiteral("\r\n                            Delete\r\n                        ");
                     EndContext();

@@ -13,42 +13,49 @@
     <div>
         <form method="post">
             <div class="form-group">
+                <div asp-validation-summary="All"></div>
                 <label asp-for="Members.FirstName" class="control-label required"></label>
                 <input asp-for="Members.FirstName" class="form-control" />
                 <span asp-validation-for="Members.FirstName" class="text-danger"></span>
             </div>
 
             <div class="form-group">
+                <div asp-validation-summary="All"></div>
                 <label asp-for="Members.LastName" class="control-label required"></label>
                 <input asp-for="Members.LastName" class="form-control" />
-                <span asp-validation-for="Members.FirstName" class="text-danger"></span>
+                <span asp-validation-for="Members.LastName" class="text-danger"></span>
             </div>
 
             <div class="form-group">
+                <div asp-validation-summary="All"></div>
                 <label asp-for="Members.Address" class="control-label required"></label>
                 <input asp-for="Members.Address" class="form-control" />
                 <span asp-validation-for="Members.Address" class="text-danger"></span>
             </div>
 
             <div class="form-group">
+                <div asp-validation-summary="All"></div>
                 <label asp-for="Members.City" class="control-label required"></label>
                 <input asp-for="Members.City" class="form-control" />
                 <span asp-validation-for="Members.City" class="text-danger"></span>
             </div>
 
             <div class="form-group">
+                <div asp-validation-summary="All"></div>
                 <label asp-for="Members.Province" class="control-label required"></label>
                 <input asp-for="Members.Province" class="form-control" />
                 <span asp-validation-for="Members.Province" class="text-danger"></span>
             </div>
 
             <div class="form-group">
+                <div asp-validation-summary="All"></div>
                 <label asp-for="Members.Postal_Code" class="control-label required"></label>
                 <input asp-for="Members.Postal_Code" class="form-control" />
                 <span asp-validation-for="Members.Postal_Code" class="text-danger"></span>
             </div>
 
             <div class="form-group">
+                <div asp-validation-summary="All"></div>
                 <label asp-for="Members.Age" class="control-label required"></label>
                 <input asp-for="Members.Age" class="form-control" />
                 <span asp-validation-for="Members.Age" class="text-danger"></span>
@@ -82,6 +89,7 @@
             </div>
 
             <div class="form-group">
+                <div asp-validation-summary="All"></div>
                 <label asp-for="Members.Phone" class="control-label required"></label>
                 <input asp-for="Members.Phone" class="form-control" />
                 <span asp-validation-for="Members.Phone" class="text-danger"></span>

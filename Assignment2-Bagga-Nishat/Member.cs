@@ -29,8 +29,8 @@ namespace Assignment2_Bagga_Nishat
         public string Age { get; set; }
 
         [Required(ErrorMessage = "Please Provide Password", AllowEmptyStrings = false)
-            ,/*RegularExpression("^^(?=(.*\d){2})(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).{8,}$")*/]
-        [StringLength(50,MinimumLength =7,ErrorMessage ="Password Must Be 7 Characters Long")]
+            ,RegularExpression("(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{4,8})$")]
+        [StringLength(50,MinimumLength =7,ErrorMessage ="Password Must Be 4-8 Characters Long containing at least one alphabet and one number ")]
         public string Password { get; set; }
 
         [Compare("Password",ErrorMessage ="Password Does not Match")]
@@ -41,8 +41,7 @@ namespace Assignment2_Bagga_Nishat
         [Required(ErrorMessage ="Please Enter Your Email ID")]
         public string Email { get; set; }
 
-        [RegularExpression(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@" + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$"
-            , ErrorMessage = "Please Provide a Valid EmailAddress")]
+        [RegularExpression(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@" + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$")]
         public string AlternativeEmail { get; set; }
 
         [RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}", ErrorMessage = "Please Provide a Valid PhoneNumber")]
